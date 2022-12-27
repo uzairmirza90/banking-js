@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank App</title>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" type="image/jpg" href="—Pngtree—vector mobile banking icon_4101278.png">
+  </head>
+  <body>
+    <!--  Navbar  -->
+
+    <div class="navbar">
+        <div class="title">
+            <h2 class="greeting">Log in to get started</h2>
+        </div>  
+        <div class="image">
+            <img src="—Pngtree—vector mobile banking icon_4101278.png" />
+        </div>
+        <div class="login">
+            <input class="user" type="text" placeholder="user" />
+            <input class="pin"
+                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                type="number" 
+                maxlength="4" 
+                placeholder="PIN"
+                 />
+            <button class="submit"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
+        </div>
+    </div>
+    <hr class="navhr" />
+
+    <!--  App  -->
+
+    <div class="before-login">
+        <h1>Welcome To Banking!  Please Log in! </h1>
+    </div>
+    <div class="banking">
+
+        
+      <!--  Balance  -->
+
+      <div class="balance">
+        <div class="date-block">
+            <h2 class="current">Current Balance</h2>
+            <p class="newdate">As of &nbsp;&nbsp;<span class="date"></span></p>
+        </div>
+        <h1 class="current-balance"><span>$</span>0</h1>
+      </div>
+
+      <!--  Actions  -->
+
+      <div class="details-and-features">
+        <!-- Transactions -->
+
+        <div class="details">
+          <div class="heading-and-button">
+            <h3 style="letter-spacing: 1px; margin-left: 20px; font-weight: 500;">Transactions</h3>
+            <button class="sort">
+              <i class="fa fa-long-arrow-down" aria-hidden="true"></i>
+              &nbsp;SORT
+            </button>
+          </div>
+
+          <div class="transactions">
+              
+            <!-- Transactions Row  -->
+
+
+          </div>
+        </div>
+
+        <!-- Features -->
+
+        <div class="features">
+          <!-- Transfer money -->
+
+          <div class="transfer-money">
+            <h4>Transfer money</h4>
+            <div class="inputs">
+              <div class="block">
+                <input class="user-input t-user-id" type="text" placeholder="user" />
+                <label>Transfer to</label>
+              </div>
+              <div class="block">
+                <input class="user-input t-amount" type="text" placeholder="$" />
+                <label>Amount</label>
+              </div>
+              <button class="t-submit">
+                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Request Loan -->
+
+          <div class="request-loan">
+            <h4>Request loan</h4>
+            <div class="inputs">
+              <div class="block">
+                <input class="user-input r-amount" type="number" placeholder="$" />
+                <label>Amount</label>
+              </div>
+              <button class="r-submit">
+                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Close account -->
+
+          <div class="close-account">
+            <h4>Sign Out</h4>
+            <div class="inputs">
+              <div class="block">
+                <input class="user-input c-user-id" type="text" placeholder="user" />
+                <label>Confirm user</label>
+              </div>
+              <div class="block">
+                <input class="user-input c-user-pin" type="number" placeholder="PIN" />
+                <label>Confirm PIN</label>
+              </div>
+              <button class="c-submit">
+                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats -->
+
+      <div class="stats">
+        <p class="headings">IN<span class="value-in"> $123123</span></p>
+        <p class="headings">OUT<span class="value-out"> $123123</span></p>
+        <p class="headings">
+          INTEREST<span class="value-interest"> $123123</span>
+        </p>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  </body>
+</html>
